@@ -1,0 +1,424 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #53B48B,#051A4F);
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('Gotham-Bold.otf') format('opentype');
+  font-weight: bold;
+}
+.hero {
+  height: 100vh; 
+  width: 100%;
+
+  background-image: url('Tini-futttura.jpg'); 
+  background-size: cover; 
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 50%;
+  right: 5%; /* lo mueve hacia la derecha */
+  transform: translateY(-30%);
+  color: white;
+  text-align: right;
+  
+}
+.contenedor h3{
+  font-family:'Monument' ;
+  font-size: 40px ;
+}
+.contenedor h2{
+  font-family:'Gotham Bold.otf';
+  font-size: 50px;
+}
+.contenedor p{
+  font-family: 'Montserrat';
+  font-size: 30px ;
+}
+.overlay h1 {
+  font-family: 'Monument';
+  font-size: 70px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.btn {
+  padding: 12px 24px;
+  border-radius: 12px;
+  border-color: #C9B2B2;
+  border: none;
+  background: #051A4F;
+  color: white;
+  font-family: 'Gotham';
+  font-size: 26;
+  cursor: pointer;
+  filter: drop-shadow(0 0 3px rgba(255,255,255,0.5)) drop-shadow(0 0 20px rgba(255,255,255,0.2));
+  transform: translateX(-25%);
+}
+
+.header { 
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  background-color: black;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.logo{
+  height: 90px;
+  position: relative;
+  margin-top: -20px;
+}
+
+.futura {
+  background: linear-gradient(to bottom,#c9b2b2 0%, #ffffffd0 50%,#C9B2B2 100% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.5)) drop-shadow(0 0 20px rgba(255,255,255,0.2));
+}
+.info {
+  padding: 80px 20px;
+  
+  color: white;
+}
+.contenedor {
+  max-width: 1000px;
+  margin: auto;
+  
+}
+.info h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-family: "Monument";
+}
+.descripcion {
+  max-width: 600px;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+.titulo-seccion {
+  text-align: center;
+  margin: 40px 0;
+  letter-spacing: 2px;
+  font-family: 'Montserrat';
+  font-size: 36px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  margin: 10px;
+  font-size: 20px;
+}
+.card h5 {
+  font-family: 'Gotham';
+  font-size: 32px;
+  margin: 10px;
+}
+.card p{
+  font-family: 'Montserrat';
+  font-size: 24px;
+  margin: 10px;
+}
+.icono {
+  font-size: 24px;
+  background: rgba(255,255,255,0.1);
+  padding: 15px;
+  border-radius: 50%;
+}
+.card:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-3px);
+  transition: 0.3s;
+}
+.mini-titulo {
+  opacity: 0.7;
+  margin-bottom: 15px;
+  color: aliceblue;
+  font-family: 'Monument';
+  font-size: 40px;
+}
+
+.titulo-info {
+  font-family: 'Gotham';
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+
+.descripcion {
+  max-width: 500px;
+  margin-bottom: 40px;
+  color: aliceblue;
+  font-family: 'Monserrat';
+  font-size: 24px;
+}
+.datos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 15px;
+}
+.icono {
+  width: 70px;
+  height: 70px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.label {
+  font-size: 12px;
+  opacity: 0.6;
+  margin: 0;
+  color: aliceblue;
+}
+
+.dato h4 {
+  margin: 4px 0;
+  color: aliceblue ;
+}
+
+.dato span {
+  font-size: 20px;
+  opacity: 0.7;
+  color: aliceblue;
+}
+.linea {
+  width: 2px;
+  height: 50px;
+  background: rgba(255,255,255,0.2);
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espacio entre logo y texto */
+}
+
+
+.texto-logo {
+  font-family: 'Monument';
+  color: white;
+  font-size: 18px;
+}
+.dato {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.info-extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+}
+.col {
+  width: 50%;
+  
+}
+.contenedor{
+  max-width: 1100px;
+  margin: auto;
+}
+.media iframe{
+  width: 100%;
+  height: 250px;
+}
+
+.info-extra{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.experiencias{
+  margin-top: 60px;
+}
+.bloque {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+.extra {
+  margin-top: 60px;
+}
+
+.media {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.media iframe {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.info-extra {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  align-items: flex-start;
+}
+
+.col .btn {
+  margin-top: 15px;
+  display: inline-block;
+}
+iframe {
+  width: 100%;
+  border-radius: 12px;
+}
+.card-exp {
+  width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8));
+  position: relative;
+}
+.cards-exp {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.card-exp img {
+  width: 100%;
+  height: 300px;
+
+  object-fit: cover; /* 🔥 CLAVE */
+  display: block;
+}
+.card-info {
+  padding: 15px;
+  color: white;
+}
+.card-info h4 {
+  margin: 10;
+  font-size: 18px;
+
+}
+
+.card-info p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+.card-exp {
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.9));
+  backdrop-filter: blur(10px);
+}
+.experiencias h2 {
+ text-align: center;
+  font-size: 40px;
+ font-family:'Gotham' ;
+ color: aliceblue;
+  margin-bottom: 10px;
+  max-width: 400px;
+  display: block;
+}
+.experiencias h3 {
+  text-align: center;
+  font-size: 20px;
+ font-family:'Monument' ;
+ color: aliceblue ;
+ margin-bottom: 10px;
+  opacity: 0.7;
+  max-width: 400px;
+  display: block;
+}
+.experiencias p {
+  text-align: justify 5px;;
+  margin-top: 20px;
+  font-size: 16px;
+ font-family:'Montserrat' ;
+}
+.experiencias h4 {
+  margin-top: 20px;
+  font-size: 20px;
+ font-family:'Gotham' ;
+}
+.contador {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px; 
+  padding: 30px 50px;
+  border-radius: 15px;
+
+  background: linear-gradient(135deg, #868a8e, #383a3a) ;
+
+  backdrop-filter: blur(10px);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto; /* 👈 lo centra */
+  font-size: 20px;
+ color: aliceblue;
+ font-family: "Gotham";
+}
+
+@media (max-width: 768px) {
+  .info-extra {
+    flex-direction: column;
+  }
+}
+.barra-final {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 20px 40px;
+  margin-top: 80px;
+}
+.contenido-barra {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.texto h3 {
+  margin: 0;
+  color: white;
+}
+.texto p {
+  margin: 5px 0 0;
+  opacity: 0.7;
+  color: white;
+}
+.btn:hover {
+  background: #2d6cdf;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.barra-final {
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.experiencias {
+  margin-top: 60px;
+  text-align: left;
+  display: block;
+}
+.experiencias .descripcion {
+  max-width: 500px;
+  display: block;
+}
